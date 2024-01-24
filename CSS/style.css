@@ -1,0 +1,269 @@
+/* Navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    box-sizing: border-box;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+
+}
+:root{
+    --navbar-height: 1.5px;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    margin-bottom:90px; 
+    
+}
+#navbar {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    display: flex;
+    height: 50px; 
+    margin-bottom:90px; 
+    scroll-margin-left: 40px;
+    width: 200px; /* Set the width of the navbar */
+    /* height: 100vh; */
+    left: 0; /* Align to the left */
+            top: 0; 
+           
+    /* Adjust the value to the desired height */
+}
+
+
+
+
+#logo img {
+    height: 40px; /* Adjust the value to the desired logo height */
+}
+
+
+
+#logo
+{
+   margin: 0.1px 3px;
+}
+
+ ul{
+    display: flex;
+    color: #34db55;
+    font-style: bold;
+}
+#navbar::before{
+    content:"";
+    background-color:rgb(224, 227, 213);
+    position: absolute;
+    height:100%;
+    width: 1518px;
+     z-index:-1;
+     opacity: 0.7;
+}
+
+#navbar ul li{
+    font-size: relative-size;
+    list-style:none;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#navbar ul li:hover{
+color:black;
+background-color:rgb(166, 159, 159);
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration:none;
+}
+/* Home Section */
+#Home{
+    margin-top: 90px;
+    display:flex;
+    color: aliceblue;
+    flex-direction: column;
+    padding: 30px 200px;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Home::before{
+    content:"";
+    background: url('../download.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height:540px;
+    width: 1525px;
+     z-index:-1;
+     opacity: 0.89;
+     margin: 0; /* Reset default margin */
+     padding: 0; /* Reset default padding */
+ 
+    background-attachment: scroll;
+ 
+ 
+   
+}
+#Home .h-primary{
+    padding-top: 150px;
+    color: rgb(3, 3, 3);
+}
+/* Services section */
+#services{
+    margin: 4px;
+    display:flex;
+    padding-top: 60px;
+}
+#Services-container .h-primary {
+    padding-top: 130px;
+   /* Adjust the value as needed to control the spacing */
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin-top: 60px;
+    padding: 34px;
+    margin: 3px 34px;
+    border-radius: 23px;
+    background-color: azure;
+   
+}
+#services .box img{
+    border: 3px ;
+    margin: auto;
+    display: block;
+}
+#services .box  p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* clientSection */
+#clients-section
+{
+height:344px;
+padding-top: 40px; 
+}
+#clients-section::before{
+    content:"";
+    position:absolute;
+    background: url('../faintcolour.jpeg') ;
+    height:340px;
+    width: 1453px;
+     z-index:-1;
+     opacity: 0.89;
+     border-color:brown ;
+     border-radius: 23px;
+     padding-right: 61px;
+}
+#clients 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients-item{
+    padding: 50px;
+
+}
+#clients img{
+    height:130px;
+    padding: 20px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 379px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('faintcolour.jpeg') no-repeat center center/cover;
+    background-color: bisque;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box text area{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 90 px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+      font-size: 1.3rem;
+}
+footer{
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    color: rgb(12, 11, 12);
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h-secondary{
+    padding-top: 20px; 
+    font-size: 3.8rem;
+    padding: 30px;
+    color: rgb(12, 11, 12);
+    text-align: center;
+    font-size: 1.8rem;
+}
+#Home p{
+    font-size: 1.99rem;
+    font-style:bold;
+    margin-top: 90px;
+}
+ #Home button {
+    background-color: #3498db;
+    color: white;
+    border: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust the value to move the button down */
+    margin-bottom: 80px; 
+}
+#Home button :hover{
+    color:black;
+background-color:rgb(225, 210, 210);
+}
+
+/* #ServicesContainer */
